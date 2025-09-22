@@ -26,7 +26,7 @@ jobs:
           node-version: '22' # o la que uses
           cache: 'npm'
       - name: Install deps
-        run: npm ci
+        run: npm install
       - name: Build
         run: npm run build
       # 👇 Para SPAs en GitHub Pages: copia index -> 404 (evita 404 al refrescar)
