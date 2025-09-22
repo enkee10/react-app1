@@ -1,30 +1,22 @@
-import Hello from "./components/Hello";
-import Card from "./components/Card";
-import Button from "./components/Button";
+import{Routes, Route} from "react-router-dom"
+import Navbar from "./components/Navbar";
+import Inicio from "./pages/Inicio";
+import Nosotros from "./pages/Nosotros";
+import Servicios from "./pages/Servicios";
+import Contacto from "./pages/Contacto";
+import Error404 from "./pages/Error404";
 
 export default function App() {
   return (
-    <main className="min-h-screen bg-gray-50 p-6">
-      <div className="mx-auto max-w-3xl space-y-6">
-        <Hello name="Enrique" />
-
-        <Card title="Tarjeta con contenido">
-          <p>Esto es JSX dentro del <code>children</code>.</p>
-          <div className="mt-4 flex gap-3">
-            <Button onClick={() => alert("Primary!")}>Primary</Button>
-            <Button variant="secondary" onClick={() => alert("Secondary!")}>Secondary</Button>
-            <Button variant="danger" onClick={() => alert("Danger!")}>Danger</Button>
-          </div>
-        </Card>
-
-        <Card title="Listas y keys (mini preview)">
-          <ul className="mt-2 list-disc pl-6">
-            {["React", "Tailwind", "Vite"].map((item) => (
-              <li key={item} className="text-gray-700">{item}</li>
-            ))}
-          </ul>
-        </Card>
-      </div>
-    </main>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Inicio />} />
+        <Route path="/nosotros" element={<Nosotros />} />
+        <Route path="/servicios" element={<Servicios />} />
+        <Route path="/contacto" element={<Contacto />} />
+        <Route path="*" element={<Error404 />} />
+      </Routes>
+    </>
   );
 }
