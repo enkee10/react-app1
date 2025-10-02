@@ -7,7 +7,7 @@ import Contacto from "./pages/Contacto";
 import Error404 from "./pages/Error404";
 import {Producto} from "./components/Producto"
 import { Contador } from "./components/contador";
-import { Formulario } from "./components/formulario";
+import { Formulario } from "./components/Formulario";
 import { CasoState } from "./components/CasoState";
 import { Pokemon } from "./components/pokemon";
 import { Usuarios } from "./components/usuarios";
