@@ -10,7 +10,7 @@ import { Contador } from "./components/contador";
 //import { CasoState } from "./components/CasoState";
 import { Formulario } from "./components/Formulario";
 import { Pokemon } from "./components/Pokemon";
-import { Usuarios } from "./components/Users";
+import { Users } from "./components/Users";
 
 export default function App() {
 
@@ -47,7 +47,7 @@ export default function App() {
       <Pokemon/>
 
       <h2>U</h2>
-      <Usuarios/>
+      <Users/>
     </>
   );
 }
