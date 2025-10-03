@@ -6,11 +6,11 @@ import Servicios from "./pages/Servicios";
 import Contacto from "./pages/Contacto";
 import Error404 from "./pages/Error404";
 import {Producto} from "./components/Producto"
-import { Contador } from "./components/contador";
+import { Contador } from "./components/Contador";
 import { Formulario } from "./components/Formulario";
 import { CasoState } from "./components/CasoState";
-import { Pokemon } from "./components/pokemon";
-import { Usuarios } from "./components/usuarios";
+import { Pokemon } from "./components/Pokemon";
+import { Usuarios } from "./components/Users.jsx";
 
 export default function App() {
 
