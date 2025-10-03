@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export function Usuarios() {
+export function Users() {
     const [usuarios, setUsuarios] = useState(() => {
         const guardados = localStorage.getItem("usuarios");
         return guardados ? JSON.parse(guardados) : [];
