@@ -17,7 +17,7 @@ export default function App() {
   const productos = [
     {nombre: "Laptop", precio: 1200},
     {nombre: "Celular", precio:800},
-    {nombre:"Audifonos", precio: 100}
+    {nombre:"Audifonos", precio: 100 }
   ]
   return (
     <>
