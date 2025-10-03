@@ -7,7 +7,7 @@ import Contacto from "./pages/Contacto";
 import Error404 from "./pages/Error404";
 import { Producto } from "./components/Producto";
 import { Contador } from "./components/contador";
-import { CasoState } from "./components/CasoState";
+//import { CasoState } from "./components/CasoState";
 import { Formulario } from "./components/Formulario";
 import { Pokemon } from "./components/Pokemon";
 import { Usuarios } from "./components/Users";
@@ -42,9 +42,6 @@ export default function App() {
 
       <h2>Formulario</h2>
       <Formulario/>
-
-      <h2>Caso State</h2>
-      <CasoState/>
 
       <h2>Poquemones</h2>
       <Pokemon/>
